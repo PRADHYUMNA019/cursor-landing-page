@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor - The AI Code Editor</title>
+    <meta name="description"
+        content="Built to make you extraordinarily productive, Cursor is the best way to code with AI.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="logo-link">
+                    <img src="https://cdn.brandfetch.io/ideKwS9dxx/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX"
+                        alt="Cursor Icon" class="logo-icon">
+                    <span class="logo-text">CURSOR</span>
+                </a>
+            </div>
+            <div class="nav-center">
+                <a href="#">Product</a>
+                <a href="#">Enterprise</a>
+                <a href="#">Pricing</a>
+                <a href="#">Resources</a>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="signin">Sign in</a>
+                <a href="#" class="download-btn">Download</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Built to make you extraordinarily productive,<br>Cursor is the best way to code with
+                AI.
+            </h1>
+            <div class="hero-cta">
+                <a href="#" class="download-hero">Download for Windows <span class="download-icon">↓</span></a>
+            </div>
+
+            <div class="hero-window-container">
+                <div class="hero-window">
+                    <div class="window-bg-image">
+                        <img src="bgimg.png" alt="Artistic Background">
+                    </div>
+                    <div class="window-chrome">
+                        <div class="window-title">Cursor</div>
+                        <div class="window-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <!-- Left Panel: Chat/Plan -->
+                        <div class="window-panel left-panel">
+                            <div class="panel-header">
+                                <span class="status-indicator">READY FOR REVIEW 6</span>
+                            </div>
+                            <div class="task-list">
+                                <div class="task-item completed">
+                                    <span class="check">✓</span>
+                                    <span class="task-text">Build Landing Page</span>
+                                </div>
+                                <div class="task-detail">
+                                    <p class="ai-thought">make a landing page based on attached docs explaining what we
+                                        do</p>
+                                    <p class="ai-action">Read <span>about-acme.md</span></p>
+                                    <p class="ai-action">Read <span>brand-guidelines.pdf</span></p>
+                                    <div class="ai-thought-block">
+                                        <span class="thought-label">Thought 6s</span>
+                                        <p>I'll create a minimal, serif-based landing page that matches your brand
+                                            voice.</p>
+                                    </div>
+                                    <div class="file-changes">
+                                        <div class="file-change">
+                                            <span class="file-icon">📄</span>
+                                            <span class="file-name">app/page.tsx</span>
+                                            <span class="file-diff red">-52</span>
+                                            <span class="file-diff green">+0</span>
+                                        </div>
+                                        <div class="file-change">
+                                            <span class="file-icon">🎨</span>
+                                            <span class="file-name">app/globals.css</span>
+                                            <span class="file-diff red">-18</span>
+                                            <span class="file-diff green">+0</span>
+                                        </div>
+                                    </div>
+                                    <p class="ai-completion">Done. Fonts preload in the head, critical CSS is inlined,
+                                        and I added a color-scheme meta tag to dark mode renders instantly without
+                                        flash. 280ms first paint.</p>
+                                </div>
+                                <div class="task-item">
+                                    <span class="circle-status">○</span>
+                                    <span class="task-text">Analyze Tab vs Agent Usa...</span>
+                                    <span class="time">2h</span>
+                                </div>
+                                <div class="task-item">
+                                    <span class="circle-status">○</span>
+                                    <span class="task-text">PyTorch MNIST Experiments</span>
+                                    <span class="time">3h</span>
+                                </div>
+                                <div class="task-input-area">
+                                    <input type="text" placeholder="Plan, search, build anything..." disabled>
+                                    <div class="input-actions">
+                                        <span class="action-badge">Agent</span>
+                                        <span class="action-badge">Composer 1 v</span>
+                                        <span class="send-icon">↑</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right Panel: Editor/Preview -->
+                        <div class="window-panel right-panel">
+                            <div class="editor-breadcrumbs">
+                                <span>http://localhost:3000</span>
+                            </div>
+                            <div class="website-preview">
+                                <div class="preview-header">
+                                    <span class="brand">Acme Labs</span>
+                                    <div class="preview-nav">
+                                        <span>Header</span>
+                                        <span>Header</span>
+                                    </div>
+                                </div>
+                                <div class="preview-body">
+                                    <h1>Software creation is changing. We are a group of researchers, engineers, and
+                                        technologists inventing at the edge of what's useful and possible.</h1>
+                                    <p>We have much to learn, try, and build.</p>
+                                    <div class="preview-buttons">
+                                        <button class="btn-preview-primary">See projects</button>
+                                        <button class="btn-preview-secondary">Join our team -></button>
+                                    </div>
+                                    <div class="preview-list">
+                                        <div class="list-row"><span class="year">2026</span><span class="item">Secure
+                                                codebase indexing</span><span class="status">Published</span></div>
+                                        <div class="list-row"><span class="year">2026</span><span class="item">Semantic
+                                                search</span><span class="status">Published</span></div>
+                                        <div class="list-row"><span class="year">2025</span><span
+                                                class="item">Reinforcement learning</span><span
+                                                class="status">Published</span></div>
+                                        <div class="list-row"><span class="year">2024</span><span class="item">Shadow
+                                                workspaces</span><span class="status">Published</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="trusted-text">Trusted every day by teams that build world-class software</p>
+        </div>
+    </section>
+    <section class="logos-section">
+        <div class="container">
+            <div class="logos-row">
+                <img src="https://cdn.brandfetch.io/idxAg10C0L/theme/light/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1746435914808"
+                    alt="Stripe" class="logo-img">
+                <img src="https://cdn.brandfetch.io/idR3duQxYl/theme/light/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1741166761598"
+                    alt="OpenAI" class="logo-img">
+                <img src="https://cdn.brandfetch.io/iduDa181eM/theme/light/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1723620984851"
+                    alt="Linear" class="logo-img">
+                <img src="https://cdn.brandfetch.io/idg33VVWFZ/theme/light/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1761201121276"
+                    alt="Datadog" class="logo-img">
+                <img src="https://cdn.brandfetch.io/idXoj5DuCE/theme/light/idjqRPlIRi.svg?c=1bxid64Mup7aczewSAYMX&t=1725526875711"
+                    alt="NVIDIA" class="logo-img">
+                <img src="https://cdn.brandfetch.io/idZHcZ_i7F/theme/light/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1768563032731"
+                    alt="Figma" class="logo-img">
+                <img src="https://cdn.brandfetch.io/idWQ_FWEk6/theme/light/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1764299288834"
+                    alt="Ramp" class="logo-img">
+                <img src="https://cdn.brandfetch.io/id_KsyK7J9/theme/light/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1668071038846"
+                    alt="Adobe" class="logo-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 1: Agents -->
+    <section class="feature-section">
+        <div class="container feature-grid">
+            <div class="feature-text">
+                <h2>Agents turn ideas into code</h2>
+                <p>Accelerate development by handing off tasks to Cursor, while you focus on making decisions.</p>
+                <a href="#" class="feature-link">Learn about agentic development -></a>
+            </div>
+            <div class="feature-visual">
+                <div class="editor-mockup">
+                    <div class="mockup-header">
+                        <span class="tab active">Plan Mission Control</span>
+                        <div class="window-controls small">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="mockup-content split-v">
+                        <div class="chat-pane" style="flex:1; border-right: 1px solid #333; padding: 20px;">
+                            <p class="chat-msg">Let's build a mission control interface, similar to the expose-style
+                                window manager on macOS</p>
+                            <div class="thought-bubble">
+                                <span>Thought 4s</span>
+                                <p>Read AppManager.tsx</p>
+                                <p>Search expose patterns</p>
+                                <div class="file-snippet">📄 feature-prd.md <span class="green">+68</span></div>
+                            </div>
+                            <p class="chat-msg">Drafted implementation steps in <strong>feature-prd.md</strong>. A few
+                                quick questions before I start building:</p>
+                        </div>
+                        <div class="code-pane" style="flex:1; padding: 20px;">
+                            <div class="file-name">feature-prd.md x</div>
+                            <pre><code># Mission Control Interface
+A grid view of all open windows...
+
+## Trigger
+Menu item in MenuBar.tsx...
+
+## View Behavior
+Overlay existing windows...</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 2: Tab -->
+    <section class="feature-section reverse">
+        <div class="container feature-grid">
+            <div class="feature-visual">
+                <div class="editor-mockup">
+                    <div class="mockup-header">
+                        <span class="tab active">Dashboard.tsx</span>
+                        <span class="tab">SupportChat.tsx</span>
+                    </div>
+                    <div class="mockup-content code-view">
+                        <pre><code>"use client";
+
+import React, { useState } from "react";
+import Navigation from "./Navigation";
+import SupportChat from "./SupportChat";
+
+export default function Dashboard() { <span class="suggestion-grey">Tab to jump here</span>
+
+  return (
+    &lt;div className="flex h-[600px] border rounded-lg overflow-hidden"&gt;
+      &lt;div className="w-64 border-r"&gt;
+      &lt;/div&gt;
+      &lt;div className="w-80 border-l"&gt;
+        &lt;SupportChat /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-text">
+                <h2>Magically accurate autocomplete</h2>
+                <p>Our specialized Tab model predicts your next action with striking speed and precision.</p>
+                <a href="#" class="feature-link">Learn about Tab -></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 3: Chat/Terminal -->
+    <section class="feature-section">
+        <div class="container feature-grid">
+            <div class="feature-text">
+                <h2>In every tool, at every step</h2>
+                <p>Cursor reviews your PRs in GitHub, collaborates in Slack, and runs in your terminal.</p>
+                <a href="#" class="feature-link">Learn about Cursor's surfaces -></a>
+            </div>
+            <div class="feature-visual">
+                <div class="slack-mockup">
+                    <div class="slack-header">#feature-realtime-sync</div>
+                    <div class="slack-msg">
+                        <div class="avatar">S</div>
+                        <div class="msg-body">
+                            <span class="user">swhitmore</span>
+                            <p>I wanna be able to go to cursor.com/changelog#1.0 to see 1.0 changelog</p>
+                        </div>
+                    </div>
+                    <div class="slack-msg">
+                        <div class="avatar">C</div>
+                        <div class="msg-body">
+                            <span class="user">@cursor</span> can you review this PR?
+                            <div class="cursor-bot-reply">
+                                <div class="bot-header">cursor APP</div>
+                                <div class="bot-content">
+                                    <p>I added direct linking. However, the implementation adds conditional constraints
+                                        across the entire app...</p>
+                                    <button class="pr-btn">View PR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Prop Section -->
+    <section class="value-prop-section">
+        <div class="container">
+            <h2 class="center-title">The new way to build software.</h2>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-box">
+                    <p class="quote">"It was night and day from one batch to another, adoption went from single digits
+                        to over 80%. It just spread like wildfire, all the best builders were using Cursor."</p>
+                    <div class="author">
+                        <div class="avatar-circle">DH</div>
+                        <div>
+                            <span class="name">Diana Hu</span>
+                            <span class="role">General Partner, Y Combinator</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <p class="quote">"My favorite enterprise AI service is Cursor. Every one of our engineers, some
+                        40,000, are now assisted by AI and our productivity has gone up incredibly."</p>
+                    <div class="author">
+                        <div class="avatar-circle">JH</div>
+                        <div>
+                            <span class="name">Jensen Huang</span>
+                            <span class="role">President & CEO, NVIDIA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <p class="quote">"The best LLM applications have an autonomy slider: you control how much
+                        independence to give the AI. In Cursor, you can do Tab completion, Cmd+K for targeted edits, or
+                        you can let it rip with the full autonomy agentic version."</p>
+                    <div class="author">
+                        <div class="avatar-circle">AK</div>
+                        <div>
+                            <span class="name">Andrej Karpathy</span>
+                            <span class="role">CEO, Eureka Labs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <p class="quote">"Cursor quickly grew from hundreds to thousands of extremely enthusiastic Stripe
+                        employees. We spend more on R&D and software creation than any other undertaking, and there's
+                        significant economic outcomes when making that process more efficient."</p>
+                    <div class="author">
+                        <div class="avatar-circle">PC</div>
+                        <div>
+                            <span class="name">Patrick Collison</span>
+                            <span class="role">Co-Founder & CEO, Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <p class="quote">"The most useful AI tool that I currently pay for, hands down, is Cursor. It's
+                        fast, autocompletes when and where you need it to, handles brackets properly, sensible keyboard
+                        shortcuts, bring-your-own-model... everything is well put together."</p>
+                    <div class="author">
+                        <div class="avatar-circle">S</div>
+                        <div>
+                            <span class="name">shadcn</span>
+                            <span class="role">Creator of shadcn/ui</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <p class="quote">"It's definitely becoming more fun to be a programmer. We are at the 1% of what's
+                        possible, and it's in interactive experiences like Cursor where models like GPT-5 shine
+                        brightest."</p>
+                    <div class="author">
+                        <div class="avatar-circle">GB</div>
+                        <div>
+                            <span class="name">Greg Brockman</span>
+                            <span class="role">President, OpenAI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frontier Section -->
+    <section class="frontier-section">
+        <div class="container">
+            <h2 class="small-title">Stay on the frontier</h2>
+            <div class="frontier-grid">
+                <div class="frontier-card">
+                    <h3>Use the best model for every task</h3>
+                    <p>Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, xAI, and Cursor.</p>
+                    <a href="#" class="frontier-link">Explore models ↗</a>
+                    <div class="card-visual-placeholder model-dropdown">
+                        <div class="input-like">
+                            <span>Ask Cursor to plan or build anything</span>
+                            <div class="tags"><span class="tag">Agent</span> <span class="tag">Gemini 3 Pro v</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-list">
+                            <div class="dd-item"><span>Auto</span> <span class="sub">Suggested</span></div>
+                            <div class="dd-item"><span>Composer 1</span></div>
+                            <div class="dd-item"><span>GPT-5.2</span></div>
+                            <div class="dd-item"><span>Opus 4.5</span></div>
+                            <div class="dd-item active"><span>Gemini 3 Pro</span> <span>✓</span></div>
+                            <div class="dd-item"><span>Grok Code</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="frontier-card">
+                    <h3>Complete codebase understanding</h3>
+                    <p>Cursor learns how your codebase works, no matter the scale or complexity.</p>
+                    <a href="#" class="frontier-link">Learn about codebase indexing ↗</a>
+                    <div class="card-visual-placeholder indexing">
+                        <div class="search-box">
+                            <p>Where are these menu label colors defined?</p>
+                            <div class="search-step"><span>Grepped</span> Choose a model</div>
+                            <div class="search-step"><span>Searched</span> Where is the model picker UI implemented?
+                            </div>
+                            <div class="search-step">Searching</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="frontier-card">
+                    <h3>Develop enduring software</h3>
+                    <p>Trusted by over half of the Fortune 500 to accelerate development, securely and at scale.</p>
+                    <a href="#" class="frontier-link">Explore enterprise -></a>
+                    <div class="card-visual-placeholder enterprise">
+                        <div class="code-column">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="code-column">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Changelog -->
+    <section class="changelog-section">
+        <div class="container">
+            <h2>Changelog</h2>
+            <div class="changelog-row">
+
+                <div class="changelog-entry">
+                    <div class="changelog-meta">
+                        <span class="version-badge">2.4</span>
+                        <span class="date">Jan 22, 2026</span>
+                    </div>
+                    <h3>Subagents, Skills, and Image Generation</h3>
+                </div>
+
+                <div class="changelog-entry">
+                    <div class="changelog-meta">
+                        <span class="date">Jan 16, 2026</span>
+                    </div>
+                    <h3>CLI Agent Modes and Cloud Handoff</h3>
+                </div>
+
+                <div class="changelog-entry">
+                    <div class="changelog-meta">
+                        <span class="date">Jan 8, 2026</span>
+                    </div>
+                    <h3>New CLI Features and Improved CLI Performance</h3>
+                </div>
+
+                <div class="changelog-entry">
+                    <div class="changelog-meta">
+                        <span class="version-badge">2.3</span>
+                        <span class="date">Dec 22, 2025</span>
+                    </div>
+                    <h3>Layout Customization and Stability Improvements</h3>
+                </div>
+
+            </div>
+
+            <a href="#" class="view-all">See what’s new in Cursor →</a>
+        </div>
+    </section>
+
+
+    <!-- Research/Team -->
+    <section class="research-section">
+        <div class="container">
+            <div class="research-container">
+                <div class="research-text">
+                    <h2>Cursor is an applied research team focused on building the future of software development.</h2>
+                    <a href="#" class="join-link">Join us -></a>
+                </div>
+                <div class="research-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=800&fit=crop"
+                        alt="Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights & Footer -->
+    <div class="darker-footer-area">
+        <section class="highlights-section">
+            <div class="container">
+                <div class="highlights-grid">
+                    <div class="hl-label" style="color: #ffffff;font-size: 14px;">Recent highlights</div>
+                    <div class="hl-list">
+                        <div class="hl-item">
+                            <h4>Introducing Cursor 2.0 and Composer</h4>
+                            <p>A new interface and our first coding model, both purpose-built for working with agents.
+                            </p>
+                            <span class="hl-meta">Product · Oct 29, 2025</span>
+                        </div>
+                        <div class="hl-item">
+                            <h4>Improving Cursor Tab with online RL</h4>
+                            <p>Our new Tab model makes 21% fewer suggestions while having 28% higher accept rate.</p>
+                            <span class="hl-meta">Research · Sep 12, 2025</span>
+                        </div>
+                        <div class="hl-item">
+                            <h4>1.5x faster MoE training with custom MXFP8 kernels</h4>
+                            <p>Achieving a 3.5x MoE layer speedup with a complete rebuild for Blackwell GPUs.</p>
+                            <span class="hl-meta">Research · Aug 29, 2025</span>
+                        </div>
+                        <a href="#" class="view-posts">View more posts -></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-center">
+            <h2>Try Cursor now.</h2>
+            <a href="#" class="download-white">Download for Windows ↓</a>
+        </section>
+
+        <footer class="main-footer">
+            <div class="container footer-grid">
+                <div class="col">
+                    <h4>Product</h4>
+                    <a href="#">Agents</a>
+                    <a href="#">Enterprise</a>
+                    <a href="#">Code Review</a>
+                    <a href="#">Tab</a>
+                    <a href="#">CLI</a>
+                    <a href="#">Cloud Agents</a>
+                    <a href="#">Pricing</a>
+                </div>
+                <div class="col">
+                    <h4>Resources</h4>
+                    <a href="#">Download</a>
+                    <a href="#">Changelog</a>
+                    <a href="#">Docs</a>
+                    <a href="#">Forum</a>
+                    <a href="#">Status</a>
+                </div>
+                <div class="col">
+                    <h4>Company</h4>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Community</a>
+                    <a href="#">Students</a>
+                    <a href="#">Brand</a>
+                    <a href="#">Anysphere</a>
+                </div>
+                <div class="col">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Data Use</a>
+                    <a href="#">Security</a>
+                </div>
+                <div class="col">
+                    <h4>Connect</h4>
+                    <a href="#">X</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <span>© 2026 Anysphere, Inc.</span>
+                <span>SOC 2 Certified</span>
+                <span class="lang-select">English v</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
